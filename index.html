@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="lockScreen">
+   <div class="lockBox">
+      <h1>Enter Secret Password 💖</h1>
+      <input type="password" id="passwordInput" placeholder="Hint: Your nickname">
+      <button id="unlockBtn">Open My Surprise 🎁</button>
+      <p id="wrongPass"></p>
+   </div>
+</div>
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+<button id="musicBtn">▶ Music</button>
+<section class="hero">
+  <div class="heroOverlay"></div>
+
+  <h1>Happy Birthday My Love Saruu ❤️</h1>
+  <h2 id="typing"></h2>
+  <button class="surpriseBtn" id="surpriseBtn"></button>
+</section>
+
+<div id="secretBox" class="secretBox">
+  <h2>My Secret 💌</h2>
+  <p>
+    Saruu, being with you for more than 10 years is the best gift life gave me.  
+    You are my forever person, my future wife and my lifetime happiness ❤️
+  </p>
+</div>
+<section class="gallery">
+<h2>Our Memories 📸</h2>
+<div class="photos">
+  <img src="photos/photo1.jpg">
+  <img src="photos/photo2.jpg">
+  <img src="photos/photo3.jpg">
+  <img src="photos/photo4.jpg">
+  <img src="photos/photo5.jpg">
+  <img src="photos/photo6.png">
+  <img src="photos/photo7.jpg">
+  <img src="photos/photo8.jpg">
+  <img src="photos/photo9.jpeg">
+  <img src="photos/photo10.jpg">
+  <img src="photos/photo11.jpg">
+  <img src="photos/photo12.jpg">
+  <img src="photos/photo13.jpeg">
+	<img src="photos/photo14.jpeg">
+  <img src="photos/photo15.jpeg">
+  <img src="photos/photo16.jpeg">
+  <img src="photos/photo17.jpg">
+  <img src="photos/photo18.jpg">
+  <img src="photos/photo.jpg">
+  <img src="photos/received_205842577463498.webp">
+  <img src="photos/IMG_20230909_182853.jpg">
+</div>
+</section>
+
+<section class="final">
+  <h1>I Love You Forever 💖</h1>
+</section>
+<div id="lovePopup" class="lovePopup">
+  <div class="popupCard">
+      <span class="closePopup" id="closePopup">×</span>
+      <h1>I Love You Saruu 💖</h1>
+      <p>We are together for more than 10 years 💕</p>
+      <p>You are my future for lifetime 🌍❤️</p>
+  </div>
+</div>
+
+<canvas id="fireworks"></canvas>
+<script src="script.js"></script>
+</body>
+</html>

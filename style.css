@@ -1,0 +1,98 @@
+body{
+ margin:0;
+ font-family:'Poppins',sans-serif;
+ color:#fff;
+ text-align:center;
+ background:linear-gradient(135deg,#1a0f2e,#3c1361,#ff4da6);
+ overflow-x:hidden;
+}
+
+h1,h2{font-family:'Playfair Display',serif}
+
+/* HERO WALLPAPER */
+.hero{
+ height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ position:relative;
+ background:url("photos/wallpaper.jpg") center/cover no-repeat;
+}
+
+/* dark overlay for text readability */
+.heroOverlay{
+ position:absolute;
+ width:100%;
+ height:100%;
+ background:rgba(0,0,0,0.45);
+ z-index:0;
+}
+.hero h1,.hero h2,.surpriseBtn,#cakeBox{z-index:1}
+
+.hero h1{
+ font-size:55px;
+ background:linear-gradient(45deg,#ffd1dc,#fff);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+}
+
+/* Secret */
+#secretLink{position:absolute;top:20px;left:20px;cursor:pointer;opacity:.7}
+.secretBox{
+ display:none;
+ max-width:500px;
+ margin:40px auto;
+ padding:30px;
+ background:rgba(255,255,255,0.12);
+ backdrop-filter:blur(20px);
+ border-radius:20px;
+}
+
+/* Gallery */
+.gallery{padding:80px 20px}
+.photos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.photos img{width:230px;border-radius:15px;transition:.5s}
+.photos img:hover{transform:scale(1.1)}
+
+.final{padding:120px;font-size:40px}
+
+/* Popup */
+.lovePopup{
+ display:none;
+ position:fixed;
+ width:100%;height:100%;
+ background:rgba(0,0,0,0.7);
+ backdrop-filter:blur(10px);
+}
+.popupCard{
+ position:absolute;
+ top:50%;left:50%;
+ transform:translate(-50%,-50%);
+ background:rgba(255,255,255,0.1);
+ padding:60px;border-radius:25px;
+}
+.closePopup{position:absolute;right:20px;top:10px;font-size:28px;cursor:pointer}
+
+/* Music */
+#musicBtn{
+ position:fixed;bottom:20px;right:20px;
+ padding:12px 25px;border:none;border-radius:30px;
+ background:#ff4da6;color:white;cursor:pointer;
+}
+
+/* Hearts */
+.heart{position:fixed;bottom:-20px;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-120vh) rotate(360deg);opacity:0}}
+
+/* Lock screen */
+#lockScreen{
+ position:fixed;width:100%;height:100%;
+ background:#1a0f2e;
+ display:flex;justify-content:center;align-items:center;
+ z-index:9999;
+}
+.lockBox{background:rgba(255,255,255,0.1);padding:50px;border-radius:25px}
+
+/* Fireworks */
+#fireworks{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none}
